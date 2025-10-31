@@ -1,0 +1,145 @@
+@charset "UTF-8";
+
+/*Irá zerar as margins e paddins*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul, li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+:root {
+    --cor-principal:#EBEBEB;
+    --second-color: #37ff1498;
+    --font-color: #00ced15d;
+    --background-color: #1D2636;
+}
+body {
+    background-color: var(--background-color);
+    color: var(--cor-principal);
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+
+    .emphasis {
+    color: var(--second-color);
+    font-weight: 900;
+}
+
+ h2 {
+    color: var(--secondary-color);
+    font-size: 3.5rem;
+    font-weight: bolder;
+    line-height: 3rem;;
+    margin-bottom: 2rem;
+  }
+
+  button {
+    border: 1px solid transparent;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 0.75rem;
+    transition:  background-color 0.3s ease;
+
+    &.primary {
+        background-color: var(--font-color);
+        color: var(--secondary-color);
+    }
+
+    &.outline {
+        background-color: transparent;
+        border: 1px solid var(--font-color);
+        color: var(--second-color);
+
+    }
+
+    &:hover{
+        background-color: darken(var (--cor-principal), 60%);
+        border: #24262F;
+    }
+
+  }
+
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-bottom: 120px;
+
+    nav {
+        font-size: 1.125rem;
+        flex: 1;
+
+        ul {
+            display: flex;
+            gap: 1.25rem;
+            justify-content: center;
+            cursor: pointer;
+
+            li {
+                font-weight: 500;
+
+                &:hover {
+                    color: var(--second-color);
+                }
+                
+            }
+
+        }
+    }
+}
+
+#hero {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: flex-start;
+    justify-items: flex-end;
+
+    article { display: flex;
+        flex: 1;
+        flex-direction: column;
+        justify-content: center;
+        gap: 2rem;
+
+        >p {
+            font-size: 1.5rem;
+            line-height: 1.8rem;
+        }
+             
+        .title {
+            color: var(--cor-principal);
+            font-size: 5.5rem;
+            font-weight: bolder;
+            line-height: 3.5rem;
+        }
+    }
+    
+    .frame {
+        align-items: center;
+        border: 2px solid var(--cor-principal);
+        display: flex;
+        border-radius: 50%;
+        justify-content: center;
+        width: 340px;
+        height: 340px;
+        
+        img {
+            width: 80%;
+            aspect-ratio: 1/1;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 5px solid var(--second-color);
+            }
+        }
+    }
+}

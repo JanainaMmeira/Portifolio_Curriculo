@@ -3,8 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="shortcut icon" href="/favicon_janaina.ico.png" type="image/x-icon">
 
-    <link rel="stylesheet" href="main.css">
+   <link rel="stylesheet" href="main.css">
+   <link rel="stylesheet" href="desktop.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,7 +16,9 @@
 </head>
 <body>
     <header>
-        <div>Janaina<span class="emphasis">.</span></div>
+        
+            <picture class="logo">
+                <img src="./android-chrome-192x192.png" alt="logo"></picture>
         <nav>
             <ul>
                 <li>Home</li>
@@ -30,12 +35,12 @@
                 <p class="title"><span class="emphasis">Front</span><span>end</span></p>
                 <p class="title">Developer</p>
                 <p>Front-End apaixonada por código e café</p>
-                <div style="display: flex; gap: 0.625rem;">
+                <div class="menu">
                     <button class="primary"> Contatos</button>
                     <button class="outline"> Projetos</button>
                 </div>
             </article>
-            <div class="frame">
+            <div id="frame">
                 <img src="foto_avatar.jpeg" alt="Avatar">
             </div>
         </section>
@@ -44,20 +49,21 @@
     <section class="history">
         <h2>Minha história<span class="emphasis">.</span></h2>
         <article class="me">
-            <p>Minha jornada começou em 2015 no Bcash uma grande empresa de técnologia com foco em<span class="emphasis">Pagamentos Online</span>. Por anos, fui o especialista em linha de frente, aprimorando habilidades essenciais, como:</p>
+            <p>Minha jornada começou em 2015 no Bcash uma grande empresa de técnologia com foco em<span class="emphasis"> Pagamentos Online</span>. Por anos, fui o especialista em linha de frente, aprimorando habilidades essenciais, como:</p>
             <p>&#9830; Resolução Complexa de Problemas;</p>
             <p>&#9830; Diagnóstico rápido de falhas em sistemas de missão crítica;</p>
             <p>&#9830; Comunicação Empática;</p>
             <p> &#9830;	Transformando frustração do usuário em soluções claras e eficazes;</p>
             <p>No momento estou em <span class="emphasis">transição para Front-end </span>e trago uma expertise única: a visão end-to-end para construir UIs que não apenas funcionam, mas que resolvem problemas antes mesmo de eles acontecerem.</p>
         </article>
+       </section>
         <article id="skills">
              
                     <h2>SKILLS </h2>
 
                     <section class="skill-area">
-                        <h3>SUPORTE:</h3>
-                        <ul>
+                        <h3 >SUPORTE:</h3>
+                        <ul class="listS">
                             <li>Resolução de Problemas;</li>
                             <li>Comunicação não violenta;</li>
                             <li>Gateways de Pagamentos;</li>
@@ -68,7 +74,7 @@
                     </section>
                     <section class="skill-area">
                             <h3>FRONT-END:</h3>
-                        <ul>
+                        <ul class="listS">
                             <li>HTML 5;</li>
                             <li> CSS 3;</li>
                             <li> Javascript;</li>
@@ -78,9 +84,9 @@
          </article>
         
         <article class="contatos">
-            <section id="img.c">
-                <a href="https://github.com/JanainaMmeira" target="_blank"> <img src="/icons8-github-64.png" alt="Logo github"></a>
-                <a href="https://www.linkedin.com/in/janainammeira" target="_blank"><img src="/icons8-linkedin-64.png" alt="Logo linkedin"></a>
+            <section>
+                <a href="https://github.com/JanainaMmeira" target="_blank"> <img class="img.c" src="/icons8-github-64.png" alt="Logo github"></a>
+                <a href="https://www.linkedin.com/in/janainammeira" target="_blank"><img  class="img.c" src="/icons8-linkedin-64.png" alt="Logo linkedin"></a>
             </section>
         </article>
     

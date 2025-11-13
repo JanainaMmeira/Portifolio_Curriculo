@@ -201,6 +201,7 @@ header {
             grid-template-columns: repeat(3, 1fr);
             align-items: center;
             text-align: center;
+            padding-top: 4rem;
            }
         
         
@@ -213,7 +214,8 @@ header {
      
 
     .skill-area {
-        padding: 20px 0 ;}
+            padding: 20px 0 ;
+    }
 
    ul.listS > li {
             list-style: disc;

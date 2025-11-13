@@ -68,32 +68,53 @@
     }
   }
 
-  #skills {
-    display: flex;
+  #skills { 
     gap: 1rem;
     padding-top: 3rem;
     margin-bottom: 0;
-    grid-template-columns: 1fr;
+    flex-basis: auto;
+
+    h2.skills1 {
+    grid-column-start: 2;
+    grid-row-start: auto; 
+
+  }
+
+    
+ 
 }
 
   h3 {
     text-align: center;
   }
+
   .skill-area { 
+    flex-direction: row;
     gap: 0;
+    grid-row-start: auto; 
+    grid-column-start: 2;
+    text-align: center;
    
   }
 
   ul.listS { 
     padding-left: 1rem;
-     
+     grid-row-start: auto;  
+
+   
  }
   ul.listS > li { 
   font-size: 1rem;
- 
+  grid-row: auto;
+
+}
+
+article.contatos {
+  margin-top: 3rem;
 }
 
   .contatos {
+
     img.imgc {
         width: 30px;
         height: 30px;

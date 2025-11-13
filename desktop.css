@@ -22,16 +22,30 @@ ul, li {
 }
 
 
-:root {
+/*:root {
 --background-color: #F9F5F0; 
 --title-color: #1c1c1c;
 --primary-color: #8C4A32; 
 --second-color: #C69B7B; 
 --cards-color: #E6CDB5; 
 
+}*/
+
+:root {
+  /* Fundo e Foco Geral */
+  --background-color: #F9FAFC; /* Fundo muito claro, quase branco (Limpeza, Estabilidade) */
+  --title-color: #14171F; /* Preto profundo para títulos (Alta Legibilidade) */
+  
+  /* Cores de Ação e Marca */
+  --primary-color: #004D99; /* Azul Cobalto Escuro (Confiança, Tecnologia) */
+  --second-color: #00A693; /* Verde Água Profundo (Segurança, Transação Concluída) */
+  
+  /* Elementos de Conteúdo */
+  --cards-color: #FFFFFF; /* Branco puro para cartões/caixas (Foco no Conteúdo) */
 }
 
 /* Variáveis CSS para o modo escuro */
+/*
 .dark-mode {
     --background-color:  #1c1c1c;
     --title-color: #F9F5F0;
@@ -39,6 +53,19 @@ ul, li {
     --second-color: #e0c3ac;
     --cards-color: #c6c1bd; 
 
+}*/
+
+.dark-mode {
+    /* Fundo e Foco Geral */
+  --background-color: #121212; /* Fundo Escuro/Preto (Visual Tecnológico, Conforto Visual) */
+  --title-color: #F1F1F1; /* Branco suave para títulos (Contraste) */
+  
+  /* Cores de Ação e Marca (Mais Claras para Acessibilidade) */
+  --primary-color: #4D92F0; /* Azul Vivo (Confiança, Contraste no Dark Mode) */
+  --second-color: #3AD0B3; /* Verde Água Claro (Segurança, Acessibilidade) */
+  
+  /* Elementos de Conteúdo */
+  --cards-color: #1C1C1C; /* Cinza escuro para cartões/caixas (Diferenciação sutil do fundo) */
 }
 
 
@@ -193,7 +220,7 @@ header {
         text-indent: 1.25rem;
 
     .me {
-        width: 75%;
+        width: 80%;
         margin: auto;
         text-indent: 1.7rem;
         text-align: justify;

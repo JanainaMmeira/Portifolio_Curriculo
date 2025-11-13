@@ -7,7 +7,7 @@
 }
 
   header {
-    flex-direction: column;
+    flex-direction: row;
     gap: .75rem;
     padding: 1rem 1rem 1.2rem;
 
@@ -122,8 +122,8 @@ article.contatos {
   .contatos {
 
     img.imgc {
-        width: 30px;
-        height: 30px;
+        width: 40px;
+        height: 40px;
         border-radius: 50%;
         gap: 2rem;
     }

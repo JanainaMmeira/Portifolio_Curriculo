@@ -1,5 +1,11 @@
 @media screen and (min-width: 320px) and (max-width: 768px) {
 
+  #toggle-darkmode {
+    display: grid;
+    grid-template-columns: auto;
+     margin-right: 1rem;
+}
+
   header {
     flex-direction: column;
     gap: .75rem;

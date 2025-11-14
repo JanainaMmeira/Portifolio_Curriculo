@@ -3,9 +3,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
   function updateButtonText() {
     if (document.body.classList.contains('dark-mode')) {
-      toggleButton.textContent = '☀️ Dark';
+      toggleButton.textContent = '☀️';
     } else {
-      toggleButton.textContent = '🌙 Light';
+      toggleButton.textContent = '🌙';
     }
   }
 
